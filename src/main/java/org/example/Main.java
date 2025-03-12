@@ -2,21 +2,10 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Customer dean = new Customer();
-        dean.setName("dean");
-        dean.setAge(20);
-        
-        Customer sam = new Customer();
-        sam.setName("sam");
-        sam.setAge(17);
-        
-        Customer castiel = new Customer();
-        castiel.setName("castiel");
-        castiel.setAge(100);
-        
-        Customer jack = new Customer();
-        jack.setName("jack");
-        jack.setAge(10);
+        YoungAdult dean = new YoungAdult("Dean", 20);
+        Teen sam = new Teen("Sam", 17);
+        Adult castiel = new Adult("Castiel", 100);
+        Kid jack = new Kid("Jack", 10);
         
         Bartender bartender = new Bartender();
         

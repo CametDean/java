@@ -10,8 +10,7 @@ class MainTest {
     
     @Test
     public void shouldServeToddy() {
-        Customer customer = new Customer();
-        customer.setAge(12);
+        Kid customer = new Kid("Claire", 12);
         
         bartender.serveDrink(customer);
         
@@ -22,8 +21,7 @@ class MainTest {
 
     @Test
     public void shouldServeCoke() {
-        Customer customer = new Customer();
-        customer.setAge(16);
+        Teen customer = new Teen("Claire", 16);
 
         bartender.serveDrink(customer);
 
@@ -34,9 +32,8 @@ class MainTest {
 
     @Test
     public void shouldServeBeer() {
-        Customer customer = new Customer();
-        customer.setAge(20);
-
+        YoungAdult customer = new YoungAdult("Claire", 20);
+        
         bartender.serveDrink(customer);
 
         String expectedDrink = "beer";
@@ -46,8 +43,7 @@ class MainTest {
 
     @Test
     public void shouldServeWhisky() {
-        Customer customer = new Customer();
-        customer.setAge(50);
+        Adult customer = new Adult("Claire", 50);
 
         bartender.serveDrink(customer);
 
